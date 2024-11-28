@@ -43,7 +43,7 @@
   <Actions Context="Author">
     <Exec>
       <Command>PowerShell.exe</Command>
-      <Arguments>-NoProfile -ExecutionPolicy Bypass -File "%USERPROFILE%\CascadeProjects\projects\scoop-auto-update\Update-Scoop.ps1"</Arguments>
+      <Arguments>-NoProfile -ExecutionPolicy Bypass -File "%~dp0Update-Scoop.ps1"</Arguments>
       <WorkingDirectory>%USERPROFILE%</WorkingDirectory>
     </Exec>
   </Actions>
