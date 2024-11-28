@@ -1,0 +1,9 @@
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# PowerShell logs
+*.log
+
+# VS Code settings
+.vscode/
