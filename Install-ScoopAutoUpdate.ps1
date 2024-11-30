@@ -17,7 +17,6 @@ if (Test-Path $TaskPath) {
     $taskXml = Get-Content $TaskPath | Out-String
     
     # Replace the path placeholder with actual path
-    $updateScriptPath = Join-Path $ScriptPath "Update-Scoop.ps1"
     $taskXml = $taskXml -replace '\$\(Split-Path -Parent \$MyInvocation.MyCommand.Definition\)', $ScriptPath
     
     Write-Host "Registering scheduled task..." -ForegroundColor Green
